@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+header ul li a {
+  margin: 0 15px;
+  animation: 0.4s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #0c7cec;
+  font-weight: 700;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+}
