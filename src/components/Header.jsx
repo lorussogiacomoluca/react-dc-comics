@@ -13,7 +13,9 @@ const Header = () => {
               <a href="#">Characters</a>
             </li>
             <li>
-              <a href="#">Comics</a>
+              <a href="#" className="active">
+                Comics
+              </a>
             </li>
             <li>
               <a href="#">Movies</a>

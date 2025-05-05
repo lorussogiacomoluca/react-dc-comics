@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -25,12 +24,28 @@ header ul {
 header ul li a {
   margin: 0 15px;
   animation: 0.4s;
+  position: relative;
 }
 
 header ul li a:hover,
 header ul li a.active {
   color: #0c7cec;
   font-weight: 700;
+}
+header ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #0c7cec;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+header ul li a:hover::after,
+header ul li a.active::after {
+  width: 100%;
 }
 
 header a {
