@@ -79,19 +79,29 @@ header a {
 #comics-section .comics-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  border: 2px solid red;
+  gap: 15px;
 }
 
-.comic-card {
-  flex: 1 1 16%;
-  min-width: 150px;
-  max-width: 150px;
+#comics-section .comic-card {
+  flex: 1 1 14%;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 
-.comic-card img {
+#comics-section .comic-card-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#comics-section .comic-card-image img {
   width: 100%;
-  object-fit: cover;
+}
+
+#comics-section .comic-card-text {
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 #main-icon {
