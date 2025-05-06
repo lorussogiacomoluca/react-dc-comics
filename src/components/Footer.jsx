@@ -1,4 +1,10 @@
 import logoBG from "../assets/img/dc-logo-BG.png";
+import facebook from "../assets/img/footer-facebook.png";
+import periscope from "../assets/img/footer-periscope.png";
+import pinterest from "../assets/img/footer-pinterest.png";
+import twitter from "../assets/img/footer-twitter.png";
+import youtube from "../assets/img/footer-youtube.png";
+
 const Footer = () => {
   return (
     <footer>
@@ -101,6 +107,31 @@ const Footer = () => {
           </div>
           <div className="right">
             <img src={logoBG} alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="footer-social">
+        <div className="container">
+          <div className="left">
+            <div className="btn">SIGN-UP NOW!</div>
+          </div>
+          <div className="right">
+            <h4>Follow us</h4>
+            <div className="social-icon">
+              <img src={facebook} alt="" />
+            </div>
+            <div className="social-icon">
+              <img src={twitter} alt="" />
+            </div>
+            <div className="social-icon">
+              <img src={youtube} alt="" />
+            </div>
+            <div className="social-icon">
+              <img src={pinterest} alt="" />
+            </div>
+            <div className="social-icon">
+              <img src={periscope} alt="" />
+            </div>
           </div>
         </div>
       </section>

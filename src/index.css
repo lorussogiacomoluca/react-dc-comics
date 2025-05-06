@@ -108,14 +108,14 @@ header a {
 }
 
 /* FOOTER */
-footer {
+footer #footer-link {
   background-image: url("./assets/img/footer-bg.jpg");
 }
 
 footer #footer-link .container {
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 430px;
   overflow: hidden;
 }
 
@@ -153,4 +153,41 @@ footer #footer-link ul li a {
 
 footer #footer-link ul li a:hover {
   color: #0c7cec;
+}
+
+footer #footer-social {
+  background-color: #303030;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+footer #footer-social .container {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #footer-social .right {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #0c7cec;
+  padding: 15px;
+}
+
+footer #footer-social .right {
+  display: flex;
+  gap: 15px;
+}
+
+footer #footer-social h4 {
+  color: #0c7cec;
+  text-transform: uppercase;
+  font-weight: 800;
 }
