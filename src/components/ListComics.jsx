@@ -180,7 +180,7 @@ const ListComics = () => {
   return (
     <section id="comics-section">
       <div className="container">
-        <div className="btn-title">CURRENT SERIES</div>
+        <div className="btn btn-title">CURRENT SERIES</div>
         <div className="comics-list">
           <ComicCard src={comics[0].thumb} name={comics[0].series} />
           <ComicCard src={comics[1].thumb} name={comics[1].series} />
@@ -194,6 +194,9 @@ const ListComics = () => {
           <ComicCard src={comics[9].thumb} name={comics[9].series} />
           <ComicCard src={comics[10].thumb} name={comics[10].series} />
           <ComicCard src={comics[11].thumb} name={comics[11].series} />
+        </div>
+        <div className="load-more">
+          <div className="btn btn-load">Load More</div>
         </div>
       </div>
     </section>

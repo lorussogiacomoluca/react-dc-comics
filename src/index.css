@@ -76,14 +76,41 @@ header a {
   height: 380px;
 }
 
+#comics-section {
+  position: relative;
+}
+
+.btn-title {
+  display: inline;
+  background-color: #0c7cec;
+  font-weight: 700;
+  font-size: 25px;
+  position: absolute;
+  top: -30px;
+}
+
+.load-more {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0c7cec;
+}
+
+.btn-load {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 #comics-section .comics-list {
+  margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 #comics-section .comic-card {
-  flex: 1 1 14%;
+  flex: 0 0 calc((100% - 75px) / 6);
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -202,6 +229,8 @@ footer #footer-social .right {
   text-transform: uppercase;
   border: 2px solid #0c7cec;
   padding: 15px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 footer #footer-social .right {
