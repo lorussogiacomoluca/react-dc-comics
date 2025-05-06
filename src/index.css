@@ -67,19 +67,31 @@ header a {
 
 /* MAIN */
 #main-content {
-  background-color: #000;
-}
-
-#main-content .container {
-  display: flex;
+  background-color: #1c1c1c;
   color: #fff;
-  align-items: center;
-  height: 120px;
 }
 
 #main-content #jumbotron {
   background-image: url("./assets/img/jumbotron.jpg");
   height: 380px;
+}
+
+#comics-section .comics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid red;
+}
+
+.comic-card {
+  flex: 1 1 16%;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.comic-card img {
+  width: 100%;
+  object-fit: cover;
 }
 
 #main-icon {
