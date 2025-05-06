@@ -8,6 +8,13 @@
   width: 1200px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.container-full {
+  width: 100vw;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,20 +26,28 @@ header ul {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 11px;
+  align-items: stretch;
+  height: 95px;
 }
 
-header ul li a {
+header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
   margin: 0 15px;
   animation: 0.4s;
   position: relative;
 }
 
-header ul li a:hover,
-header ul li a.active {
+header ul li:hover a,
+header ul li.active a {
   color: #0c7cec;
   font-weight: 700;
 }
-header ul li a::after {
+header ul li::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -43,12 +58,24 @@ header ul li a::after {
   transition: width 0.3s ease;
 }
 
-header ul li a:hover::after,
-header ul li a.active::after {
+header ul li:hover::after,
+header ul li.active::after {
   width: 100%;
 }
 
 header a {
   text-decoration: none;
   color: #000;
+}
+
+.container-full {
+  background-color: #000;
+}
+
+.bg-black {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  border: 1px solid red;
 }
