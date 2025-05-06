@@ -87,3 +87,29 @@ header a {
   align-items: center;
   height: 120px;
 }
+
+#main-icon {
+  background-color: #0c7cec;
+}
+
+#main-icon .container {
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.card-img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.card-img img {
+  width: 100%;
+}
