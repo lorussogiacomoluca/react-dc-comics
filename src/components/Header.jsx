@@ -1,6 +1,6 @@
 import Navbar from "./Navbar.jsx";
 import Logo from "./shared/Logo.jsx";
-const navbarLinks = require("../assets/links.js");
+import links from "../assets/links.js";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
           <div className="logo">
             <Logo />
           </div>
-          <Navbar links={navbarLinks} />
+          <Navbar links={links} />
         </div>
       </section>
     </header>
