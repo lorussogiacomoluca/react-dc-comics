@@ -186,21 +186,7 @@ const ListComics = () => {
     <section id="comics-section">
       <div className="container">
         <div className="btn btn-title">CURRENT SERIES</div>
-        <div className="comics-list">
-          <ComicCard src={comics[0].thumb} name={comics[0].title} />
-          <ComicCard src={comics[1].thumb} name={comics[1].title} />
-          <ComicCard src={comics[2].thumb} name={comics[2].title} />
-          <ComicCard src={comics[3].thumb} name={comics[3].title} />
-          <ComicCard src={comics[4].thumb} name={comics[4].title} />
-          <ComicCard src={comics[5].thumb} name={comics[5].title} />
-          <ComicCard src={comics[6].thumb} name={comics[6].title} />
-          <ComicCard src={comics[7].thumb} name={comics[7].title} />
-          <ComicCard src={comics[8].thumb} name={comics[8].title} />
-          <ComicCard src={comics[9].thumb} name={comics[9].title} />
-          <ComicCard src={comics[10].thumb} name={comics[10].title} />
-          <ComicCard src={comics[11].thumb} name={comics[11].title} />
-          {genComicList}
-        </div>
+        <div className="comics-list">{genComicList}</div>
         <div className="load-more">
           <div className="btn btn-load">Load More</div>
         </div>
