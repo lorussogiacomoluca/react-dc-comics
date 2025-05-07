@@ -179,7 +179,11 @@ const comics = [
 const ListComics = () => {
   //Variable for generating and rendering list of comics
   const genComicList = comics.map((comic) => (
-    <ComicCard src={comic.thumb} name={comic.title} />
+    <ComicCard
+      key={`comics-${comic.id}`}
+      src={comic.thumb}
+      name={comic.title}
+    />
   ));
 
   return (
